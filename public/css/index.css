@@ -1,0 +1,109 @@
+.ad_box {
+  display: flex;
+  padding: 10px 100px;
+  flex-direction: column;
+  background-color: rgba(28, 28, 28, 0.25);
+  height: auto;
+}
+
+.title {
+  font-family: 'Cinzel';
+  font-size: calc(40px * var(--dar));
+  font-weight: bold;
+  color: #E0E0E0;
+  text-shadow: 1px 0 #E0E0E0;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.mid_text {
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(32px * var(--dar));
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #E0E0E0;
+}
+
+.play_box {
+  justify-content: center;
+  display: flex;
+  justify-self: center;
+  margin-top: 4%;
+  padding: 1rem;
+  background-color: rgba(28, 28, 28, 0.6);
+  width: 100%;
+  max-width: 1400px;
+  border: 5px solid #DAAF20;
+  border-radius: 10px;
+  gap: 15rem;
+}
+
+.game_box {
+  position: relative;
+  display: flex;
+  width: 250px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  background-color: #7133b0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 5px solid #A773DC;
+}
+
+.game_icon {
+  position: absolute;
+  width: 80%;
+  aspect-ratio: 1 / 1;
+}
+
+.games_text_box {
+  position: absolute;
+  width: auto;
+  height: auto;
+  text-align: center;
+  background-color: #7133b0b0;
+  border-radius: 10px;
+  border: 5px solid #A773DC;
+  text-shadow: 1px 0 #E0E0E0;
+  letter-spacing: 1px;
+}
+
+.games_text {
+  color: #E0E0E0;
+  font-size: calc(36px * var(--dar));
+  font-family: 'Cinzel';
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.games_text:hover {
+  color: #242424;
+  text-shadow: 1px 0 #242424;
+  text-decoration: none;
+}
+
+@media (max-width: 1080px){
+  .play_box > :not(:first-child) {
+    margin-left: auto;
+  }
+  .play_box{
+    gap: 0rem;
+  }
+}
+
+@media (max-width: 780px){
+  .game_box{
+    width: 33%;
+  }
+  .ad_box{
+    padding: 10px;
+  }
+}
+
+@media (max-width: 650px){
+  .games_text{
+    margin: 0rem;
+  }
+}

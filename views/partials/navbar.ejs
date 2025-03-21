@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/navbar.css">
+<link rel="stylesheet" href="/css/scrollbar.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+
+<div class="navbar">
+	<div class="center-panel">
+		<div class="left-panel">
+			<a href="/">
+				<img src="/images/logo.png" alt="Icon" class="logo">
+			</a>
+		</div>
+		<div class="middle-panel">
+			<div class="balance_box">
+				<span class="balance_text" id="balance">0</span>
+				<img src="/images/dollar_sign.png" class="dollar_sign">
+			</div>
+			<a class="credit_card_box" id="credit_card">
+				<img src="/images/credit_card.png" alt="Icon" class="credit_card">
+			</a>
+
+			
+		</div>
+		<div class="right-panel">
+			<a href="/player" class="user_icon_box">
+				<img src="/images/user-icon.png" alt="Icon" class="user_icon">
+			</a>
+		</div>
+	</div>
+</div>
+
+<%- include ("../partials/paypal.ejs") %>

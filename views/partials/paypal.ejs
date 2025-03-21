@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="/css/paypal.css">
+
+<div class="wallet-box" id="wallet" style="display: none;">
+    <div class="header">
+        <img src="/images/paypal_icon.png">
+        <a id="close_wallet">X</a>
+    </div>
+    
+    <div class="wallet-direction-box">
+        <div class="wallet-direction wallet-direction-choice" id="wallet_deposit">Déposer</div>
+        <div class="wallet-direction" id="wallet_transfer">Transférer</div>
+    </div>
+    <div class="wallet-error" id="wallet_error">Vous n'avez pas le solde</div>
+    <label id="wallet_transfer_email_label" style="display: none;">Email</label>
+    <input id="wallet_transfer_email" style="display: none;">
+    <label>Montant</label>
+    <input id="wallet_transfer_amount">
+    <button id="wallet_start_transaction">Effectuer transaction</button>
+</div>
+
+<script type="module" src="/js/paypal.js"></script>

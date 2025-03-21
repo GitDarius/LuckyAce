@@ -1,0 +1,209 @@
+:root {
+  --dar: 1;  /* Scale factor for font */
+}
+
+.navbar {
+  display: flex;
+  background-color: rgba(28, 28, 28, 0.6);
+  overflow: hidden; 
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  height: 20%;
+  z-index: 1000;
+  border-bottom: 5px solid rgba(28, 28, 28, 1);
+}
+
+.center-panel{ 
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+}
+
+.left-panel {
+  width: 150px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-self: center;
+  width: 90%;
+  aspect-ratio: 1 / 1;
+}
+
+.middle-panel {
+  width: 280px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.balance_box{
+  margin-left: auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  background-color: #7233B0;
+  border-radius: 10px;
+  gap: 0.5rem;
+  align-items: center;
+  border: 5px solid #A773DC;
+}
+
+.balance_text{
+  position: relative;
+  display: flex;
+  font-size: calc(40px * var(--dar));
+  color: #E0E0E0;
+  margin-left: 1rem;
+}
+
+.dollar_sign{ 
+  position: relative;
+  display: flex;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.credit_card{
+  width: 64px;
+  aspect-ratio: 1.58 / 1;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.user_icon{
+  width: 40px;
+  height: 50px;
+  margin: 1rem;
+}
+
+.user_icon_box{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  width: 64px;
+  height: 64px;
+  background-color: #7233B0;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user_icon_box:hover{
+  background-color: #3e1175;
+}
+
+.credit_card_box{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  background-color: #7233B0;
+  border-radius: 10px;
+  margin-right: auto;
+}
+
+.credit_card_box:hover{
+  background-color: #591fa0;
+}
+
+.credit_card:active{
+  background-color: #3e1175;
+}
+
+.right-panel {
+  width: 350px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.sign-up{
+  position: relative;
+  color: #E0E0E0;
+  background-color: #7233B0;
+  border-radius: 10px;
+  padding: 5px 5px;
+  font-size: calc(32px * var(--dar));
+}
+
+.sign-up:hover {
+  background-color: #591fa0;
+  text-decoration: none;
+  color: white;
+}
+
+.sign-up:active{
+  background-color: #3e1175;
+  text-decoration: none;
+  color: #E0E0E0;
+}
+
+.sign-in{
+  position: relative;
+  display: flex;
+  color: #E0E0E0;
+  border-radius: 10px;
+  padding: 5px 5px;
+  font-size: calc(32px * var(--dar));
+}
+
+.sign-in:hover {
+  color: #7233B0;
+  text-decoration: none;
+}
+
+.sign-in:active {
+  color: #591fa0;
+  text-decoration: none;
+}
+
+@media (max-width: 860px){
+  :root {
+    --dar: 0.9;
+  }
+}
+
+@media (max-width: 820px){
+  :root {
+    --dar: 0.85;
+  }
+}
+
+@media (max-width: 780px){
+  :root {
+    --dar: 0.8;
+  }
+  .right-panel {
+    width: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 600px){
+  .credit_card{
+    width: 55px;
+  }
+  .dollar_sign{
+    height: 35px;
+    width: 20px;
+  }
+}
+  

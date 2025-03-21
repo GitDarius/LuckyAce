@@ -1,0 +1,47 @@
+<%- include ("../partials/header.ejs") %>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+
+        <div class="ad_box">
+            <div class="title">Casino en ligne sans risques !</div>
+            <div class="mid_text">Votre chance vous attend <br> Jouez maintenant !</div>
+            <div>
+                <a href="/sign_up" class="sign-up">S'inscrire</a>
+            </div>
+        </div>
+
+        <div class="play_box">
+            <div class="game_box">
+                <img src="/images/blackjack_cards.png" class="game_icon">
+                <div class="games_text_box">
+                    <a href="/blackjack" class="games_text">Blackjack</a>
+                </div>
+            </div>
+            <div class="game_box">
+                <img src="/images/coinflip_icon.png" class="game_icon">
+                <div class="games_text_box">
+                    <a href="/head-tails" class="games_text">Pile ou Face</a>
+                </div>
+            </div>
+            <div class="game_box">
+                <img src="/images/logo_RPC.png" class="game_icon">
+                <div class="games_text_box">
+                    <a href="/rock-paper-scissors" class="games_text">Roche Papier Ciseaux</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <script>
+            // Tricky way to close the paypal popup
+            if (window.opener && window.location.search.includes("paypal")) {
+                setTimeout(() => window.close(), 0);
+            }
+        </script>
+
+        <%- include ("../partials/footer.ejs") %>

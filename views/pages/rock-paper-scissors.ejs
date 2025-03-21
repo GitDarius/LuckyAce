@@ -1,0 +1,49 @@
+<!--Links for the text font-->
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+
+<!--Links for the css pages-->
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+<link rel="stylesheet" type="text/css" href="/css/rock_paper_scissors.css">
+<link rel="stylesheet" type="text/css" href="/css/rules.css">
+
+<%- include ("../partials/header.ejs") %>
+<%- include ("../partials/rules.ejs") %>
+    <div class="center-box">
+        <div class="left-panel">
+            <img src="images/question_mark.png" class="question" onclick="openRules()">
+            <%- include ("../partials/bet.ejs") %>
+            <div class="bottom-box">
+                <button class="action-button" id="button_start_game">Commencer</button>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="choice-panel">
+                <img id="r_image" src="/images/rock_icon.png">
+                <img id="p_image" src="/images/paper_icon.png">
+                <img id="s_image" src="/images/scissors_icon.png">
+            </div>
+            <div class="game-panel">
+                <img id="player_choice_image" src="/images/question_mark.png">
+                <img id="bank_choice_image" src="/images/question_mark.png">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        window.rulesArray = [
+            "/images/Rules/Head-tails/0.png",
+            "/images/Rules/Head-tails/1.png",
+            "/images/Rules/Head-tails/2.png",
+            "/images/Rules/Head-tails/3.png",
+            "/images/Rules/Head-tails/4.png",
+            "/images/Rules/Head-tails/5.png",
+        ];
+    </script>
+
+    <script type="module" src="/js/rock-paper-scissors.js"></script>
+    <script src="/js/rules.js"></script>
+
+
+    <%- include ("../partials/footer.ejs") %>

@@ -1,0 +1,61 @@
+<!--Links for the text font-->
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+
+<!--Links for the css pages-->
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+<link rel="stylesheet" type="text/css" href="/css/blackjack.css">
+<link rel="stylesheet" type="text/css" href="/css/rules.css">
+
+<%- include ("../partials/header.ejs") %>
+<%- include ("../partials/rules.ejs") %>
+    <div class="center-box">
+        <div class="left-panel">
+            <img src="images/question_mark.png" class="question" onclick="openRules()">
+            <%- include ("../partials/bet.ejs") %>
+            <div class="button-box">
+                <button class="action-button button-top button-left" id="button_hit">Piger</button>
+                <button class="action-button button-top button-right" id="button_rest">Rester</button>
+                <button class="action-button button-middle button-right" id="button_double">Doubler</button>
+                <button class="action-button button-middle button-left" id="button_split">Separer</button>
+                <button class="action-button button-down" id="button_start_game">Commencer</button>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="top-panel">
+                <div class="card-holder card-holder-bank" id="cards_bank">
+                    <div class="somme" id="sum_bank">Total : 0</div>
+                </div>
+                <div class="cards-deck" id="cards_deck">
+                    <img src="/images/Cartes/Dos.png" class="deck-card" style="margin-left: 1rem;">
+                    <img src="/images/Cartes/Dos.png" class="deck-card" style="margin-left: 0.5rem;">
+                    <img src="/images/Cartes/Dos.png" class="deck-card">
+                </div>
+            </div>
+
+            <div class="bottom-panel" id="bottom_panel">
+                <div class="card-holder" id="cards_player_1">
+                    <div class="somme" id="sum_player_1">Total : 0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.rulesArray = [
+            "/images/Rules/Blackjack/0.png",
+            "/images/Rules/Blackjack/1.png",
+            "/images/Rules/Blackjack/2.png",
+            "/images/Rules/Blackjack/3.png",
+            "/images/Rules/Blackjack/4.png",
+            "/images/Rules/Blackjack/5.png",
+            "/images/Rules/Blackjack/6.png",
+            "/images/Rules/Blackjack/7.png"
+        ];
+    </script>
+
+    <script type="module" src="/js/blackjack.js"></script>
+    <script src="/js/rules.js"></script>
+
+
+    <%- include ("../partials/footer.ejs") %>

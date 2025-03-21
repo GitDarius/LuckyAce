@@ -1,0 +1,49 @@
+<!--Links for the text font-->
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+
+<!--Links for the css pages-->
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+<link rel="stylesheet" type="text/css" href="/css/player.css">
+
+<%- include ("../partials/header.ejs") %>
+
+<div class="dashboard-container">
+    <div class="dashboard-header">
+        <h1 class="dashboard-title">Dashboard</h1>
+    </div>
+    <div class="content-area">
+        <div class="dashboard-box" id="infos-box">
+            <h3>Informations</h3>
+            <form>
+                <label>Nom d'utilisateur:</label>
+                <input id="username">
+                <label>Email : </label>
+                <input id="email">
+                <label class="warning" style="display: none;" id="infos_warning"></label>
+                <button type="button" id="player_save_infos">Sauvegarder</button>
+            </form>
+            
+        </div>
+        <div class="dashboard-box" id="infos-box">
+            <h3>Changer le mot de passe</h3>
+            <form>
+                <label>Mot de passe actuel</label>
+                <input id="password" type="password">
+                <label>Nouveau mot de passe</label>
+                <input id="new_password" type="password">
+                <label>Confirmer le nouveau mot de passe</label>
+                <input id="confirm_new_password" type="password"> 
+                <label class="warning" style="display: none;" id="password_warning">Abc</label> 
+                <button type="button" id="player_save_password">Sauvegarder</button>
+            </form>
+        </div>
+        <div class="dashboard-box" id="bets">
+            <h3>Paris</h3>
+        </div>
+    </div>
+</div>
+
+<%- include ("../partials/footer.ejs") %>
+
+<script type="module" src="/js/player.js"></script>

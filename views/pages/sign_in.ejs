@@ -1,0 +1,39 @@
+<!--Links for the text font-->
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+
+<!--Links for the css pages-->
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+<link rel="stylesheet" type="text/css" href="/css/sign_in.css">
+
+<!--Get screen size to dynamically change it's design, so when Emile changes it's size it's still pretty-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Not much comments because the class is kinda self explanatory-->
+<div class="center-box">
+  <div class="left-panel">
+    <a href="/" class="logo-a"><img src="/images/logo.png" alt="Icon" class="left-image"></a>
+    <div class="signup-text">Connexion</div>
+    <div class="signin-text">
+      Pas de compte? <a href="sign_up">Inscrivez-vous!</a>
+    </div>
+  </div>
+
+  <div class="right-panel">
+    <div class="form-panel">
+      <form>
+        <div class="form-field">
+          <input type="text" id="username" name="username" placeholder="Nom d'utilisateur">
+        </div>
+        <div class="form-field">
+          <input type="password" id="password" name="password" placeholder="Mot De Passe">
+        </div>
+      </form>
+      <label class="warning" id="warning" style="display: none;">Nom d'utilisateur ou mot de passe incorrect. Veuillez vérifier vos informations et réessayer.</label>
+    </div>
+      <button type="button" class="create-account-btn" onclick="verifyInfos()">Se connecter</button>
+  </div>
+
+</div>
+
+<script src="/js/sign_in.js"></script>

@@ -1,0 +1,16 @@
+/* For WebKit browsers */
+::-webkit-scrollbar {
+  width: 12px;  /* width of the vertical scrollbar */
+  height: 12px; /* height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(28, 28, 28, 0.6); /* background of the scrollbar track */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7133b0; /* color of the scrollbar thumb (slider) */
+  border-radius: 6px;
+  border: 2px solid #DAAF20; /* creates some spacing between thumb and track */
+}

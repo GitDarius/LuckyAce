@@ -1,0 +1,56 @@
+<!--Links for the text font-->
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+
+<!--Links for the css pages-->
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+<link rel="stylesheet" type="text/css" href="/css/sign_up.css">
+<link rel="stylesheet" href="/css/scrollbar.css">
+
+<!--Get screen size to dynamically change it's design, so when Emile changes it's size it's still pretty-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Not much comments because the class is kinda self explanatory-->
+<div class="center-box">
+  <div class="left-panel">
+    <a href="/" class="logo-a"><img src="/images/logo.png" alt="Icon" class="left-image"></a>
+    <div class="signup-text">S'inscrire</div>
+    <div class="signin-text">
+      Déjà un utilisateur? <a href="/sign_in">Connectez vous!</a>
+    </div>
+  </div>
+
+  <div class="form-panel">
+    <form>
+      <label class="warning" id="username_warning"></label>
+      <div class="form-field">
+        <input type="text" id="username" name="username" placeholder="Nom d'utilisateur">
+      </div>
+      <label class="warning" id="email_warning"></label>
+      <div class="form-field">
+        <input type="email" id="email" name="email" placeholder="Email">
+      </div>
+      <label class="warning" id="password_warning"></label>
+      <div class="form-field">
+        <input type="password" id="password" name="password" placeholder="Mot de passe">
+      </div>
+      <label class="warning" id="confirm_password_warning"></label>
+      <div class="form-field">
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmer le mot de passe">
+      </div>
+      <label class="warning" id="terms_warning"></label>
+    </form>
+    <div class="bottom-panel">
+      <input type="checkbox" id="terms" class="custom-checkbox">
+      <div class="disclaimer">
+        En cliquant sur « Créer un compte », vous confirmez que vous avez l'âge légal pour jouer dans votre pays de
+        résidence.
+      </div>
+      <button type="button" class="create-account-btn" id="create_account">Créer compte</button>
+    </div>
+  </div>
+  </div>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="module" src="/js/sign_up.js"></script>
